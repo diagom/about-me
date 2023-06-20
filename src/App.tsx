@@ -7,8 +7,9 @@ const App = () => (
       <AncientPaper>
         <style.aboutMeContainer>
           <style.textBox>
-            <style.aboutMeMainText>Diego Araujo</style.aboutMeMainText>
-            <style.aboutMeSubText>Front-end developer</style.aboutMeSubText>
+            <style.aboutMeMainText>Hello. </style.aboutMeMainText>
+            <style.aboutMeMainText>I am Diego </style.aboutMeMainText>
+            <style.aboutMeSubText>I'm a web developer</style.aboutMeSubText>
           </style.textBox>
         </style.aboutMeContainer>
       </AncientPaper>

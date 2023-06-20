@@ -21,13 +21,17 @@ const textBox = styled.div`
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
+
+  span {
+    height: 70px;
+  }
 `;
 
-const aboutMeMainText = styled.div`
+const aboutMeMainText = styled.span`
   font-size: calc((1vw + 1vh) * 3);
 `;
 
-const aboutMeSubText = styled.div`
+const aboutMeSubText = styled.span`
   font-size: calc((1vw + 1vh) * 1.25);
 `;
 

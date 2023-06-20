@@ -1,5 +1,6 @@
 import React from "react";
 import style from "components/Ancient-paper/Ancient-Paper.style";
+import medievalBorder from "assets/medieval-border.svg";
 
 interface IAncientPaper {
   children?: React.ReactNode;
@@ -11,7 +12,13 @@ const AncientPaper = ({ children }: IAncientPaper) => (
   <>
     <style.paperStyle></style.paperStyle>
 
-    <style.paperContainer>{children}</style.paperContainer>
+    <style.paperBorderTop>
+      <img src={medievalBorder} />
+    </style.paperBorderTop>
+
+    <style.paperBorderBottom>
+      <img src={medievalBorder} />
+    </style.paperBorderBottom>
 
     <svg height={0}>
       <filter id="wavy2">
@@ -19,6 +26,8 @@ const AncientPaper = ({ children }: IAncientPaper) => (
         <feDisplacementMap in="SourceGraphic" scale="30" />
       </filter>
     </svg>
+
+    <style.paperContainer>{children}</style.paperContainer>
   </>
 );
 
