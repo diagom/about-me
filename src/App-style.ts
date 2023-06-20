@@ -1,5 +1,12 @@
 import styled from "styled-components";
 
+const aboutMeHeader = styled.header`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5vh;
+`;
+
 const aboutMeContainer = styled.section`
   height: 100vh;
 
@@ -17,19 +24,11 @@ const textBox = styled.div`
 `;
 
 const aboutMeMainText = styled.div`
-  font-size: 70px;
+  font-size: calc((1vw + 1vh) * 3);
 `;
 
 const aboutMeSubText = styled.div`
-  font-size: 30px;
+  font-size: calc((1vw + 1vh) * 1.25);
 `;
 
-const aboutMeButton = styled.div`
-  width: 175px;
-
-  background-color: blue;
-
-  cursor: pointer;
-`;
-
-export default { aboutMeMainText, aboutMeContainer, textBox, aboutMeSubText, aboutMeButton };
+export default { aboutMeMainText, aboutMeContainer, textBox, aboutMeSubText, aboutMeHeader };
