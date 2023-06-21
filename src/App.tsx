@@ -1,8 +1,11 @@
 import style from "App-style";
 import AncientPaper from "components/Ancient-paper";
+import SocialMidia from "components/Social-Medias";
 
 const App = () => (
   <>
+    <SocialMidia />
+
     <style.aboutMeHeader>
       <AncientPaper>
         <style.aboutMeContainer>
