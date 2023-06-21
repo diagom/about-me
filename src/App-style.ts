@@ -1,5 +1,18 @@
 import styled from "styled-components";
 
+const loadAnimation = styled.div`
+  @keyframes slideInFromTop {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  animation: 2s ease-out 0s 1 slideInFromTop;
+`;
+
 const aboutMeHeader = styled.header`
   display: flex;
   flex-wrap: wrap;
@@ -36,4 +49,4 @@ const aboutMeSubText = styled.span`
   font-size: calc((1vw + 1vh) * 1.25);
 `;
 
-export default { aboutMeMainText, aboutMeContainer, textBox, aboutMeSubText, aboutMeHeader };
+export default { loadAnimation, aboutMeMainText, aboutMeContainer, textBox, aboutMeSubText, aboutMeHeader };

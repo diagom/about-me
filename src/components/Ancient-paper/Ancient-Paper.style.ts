@@ -36,16 +36,36 @@ const paperBorderTop = styled.div<{ $height?: string; $width?: string }>`
   img {
     width: 50%;
     height: 50%;
+
+    visibility: hidden;
+    animation-name: borderGrowUp;
+    animation-delay: 1.5s;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+  }
+
+  @keyframes borderGrowUp {
+    0% {
+      clip-path: circle(0.5% at 0 0);
+    }
+    100% {
+      clip-path: circle(140.9% at 0 0);
+      visibility: visible;
+    }
   }
 
   @media (max-width: 1024px) {
     display: none;
   }
+
+  &:after {
+    visibility: visible;
+  }
 `;
 
 const paperBorderBottom = styled(paperBorderTop)`
   rotate: 180deg;
-
   top: 2%;
   left: 50%;
 
