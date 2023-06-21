@@ -1,4 +1,3 @@
-import React from "react";
 import style from "components/Ancient-paper/Ancient-Paper.style";
 import medievalBorder from "assets/medieval-border.svg";
 

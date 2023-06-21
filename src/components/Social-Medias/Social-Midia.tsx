@@ -1,4 +1,3 @@
-import React from "react";
 import style from "components/Social-Medias/Social-Midia.style";
 import github from "assets/github.svg";
 import instagram from "assets/instagram.svg";
