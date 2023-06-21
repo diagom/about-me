@@ -30,14 +30,16 @@ const paperBorderTop = styled.div<{ $height?: string; $width?: string }>`
   ${(props) => propSize(props)};
   position: absolute;
   top: 10%;
-  left: 47%;
+  left: 50%;
   transform: translate(-50%, 0);
-
-  z-index: -1;
 
   img {
     width: 50%;
     height: 50%;
+  }
+
+  @media (max-width: 1024px) {
+    display: none;
   }
 `;
 
@@ -45,7 +47,7 @@ const paperBorderBottom = styled(paperBorderTop)`
   rotate: 180deg;
 
   top: 2%;
-  left: 54%;
+  left: 50%;
 
   transform: translate(50%, 0);
 `;

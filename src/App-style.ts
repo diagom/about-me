@@ -5,6 +5,7 @@ const aboutMeHeader = styled.header`
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 5vh;
+  overflow: hidden;
 `;
 
 const aboutMeContainer = styled.section`
@@ -23,7 +24,7 @@ const textBox = styled.div`
   flex-wrap: nowrap;
 
   span {
-    height: 70px;
+    height: calc((1vw + 1vh) * 3);
   }
 `;
 
