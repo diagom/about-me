@@ -1,25 +1,21 @@
 import style from "App-style";
-import AncientPaper from "components/Ancient-paper";
+import AboutMeHeader from "components/About-Me-Header";
 import SocialMidia from "components/Social-Medias";
 
 const App = () => (
   <>
-    <style.loadAnimation>
-      <SocialMidia />
+    <SocialMidia />
 
+    <style.aboutMeHeader>
+      <style.loadAnimation>
+        <AboutMeHeader />
+      </style.loadAnimation>
+    </style.aboutMeHeader>
+    <main>
       <style.aboutMeHeader>
-        <AncientPaper>
-          <style.aboutMeContainer>
-            <style.textBox>
-              <style.aboutMeMainText>Hello. </style.aboutMeMainText>
-              <style.aboutMeMainText>I am Diego </style.aboutMeMainText>
-              <style.aboutMeSubText>I'm a web developer</style.aboutMeSubText>
-            </style.textBox>
-          </style.aboutMeContainer>
-        </AncientPaper>
+        <AboutMeHeader />
       </style.aboutMeHeader>
-    </style.loadAnimation>
-    <main></main>
+    </main>
     <footer></footer>
   </>
 );

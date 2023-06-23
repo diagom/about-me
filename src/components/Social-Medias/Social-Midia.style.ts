@@ -1,14 +1,15 @@
 import styled from "styled-components";
 
 const iconsConstainer = styled.div`
-  position: absolute;
+  position: sticky;
   display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
   flex-direction: column;
+  height: 0;
   width: 48px;
-  bottom: 10vh;
+  top: 80vh;
   left: 7vw;
 `;
 
