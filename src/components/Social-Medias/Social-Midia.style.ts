@@ -5,12 +5,23 @@ const iconsConstainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  align-content: center;
   flex-direction: column;
   height: 0;
   width: 48px;
   top: 80vh;
   left: 7vw;
+  z-index: 2;
+
+  @keyframes slideInFromButtom {
+    0% {
+      top: 130vh;
+    }
+    100% {
+      top: 80vh;
+    }
+  }
+
+  animation: 2s ease-out 0s 1 slideInFromButtom;
 `;
 
 const sword = styled.div`

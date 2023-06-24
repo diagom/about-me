@@ -11,11 +11,7 @@ const App = () => (
         <AboutMeHeader />
       </style.loadAnimation>
     </style.aboutMeHeader>
-    <main>
-      <style.aboutMeHeader>
-        <AboutMeHeader />
-      </style.aboutMeHeader>
-    </main>
+    <main></main>
     <footer></footer>
   </>
 );
