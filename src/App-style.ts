@@ -21,4 +21,13 @@ const aboutMeHeader = styled.header`
   overflow: hidden;
 `;
 
-export default { loadAnimation, aboutMeHeader };
+const aboutMainContainer = styled.main`
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
+  overflow: hidden;
+`;
+
+export default { loadAnimation, aboutMeHeader, aboutMainContainer };

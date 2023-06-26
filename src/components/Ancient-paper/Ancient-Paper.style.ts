@@ -39,7 +39,7 @@ const paperBorderTop = styled.div<{ $height?: string; $width?: string }>`
 
     visibility: hidden;
     animation-name: borderGrowUp;
-    animation-delay: 1.5s;
+    animation-delay: 1.3s;
     animation-duration: 8s;
     animation-fill-mode: forwards;
     animation-timing-function: ease;

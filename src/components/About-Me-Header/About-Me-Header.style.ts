@@ -21,11 +21,11 @@ const textBox = styled.div`
 `;
 
 const aboutMeMainText = styled.span`
-  font-size: calc((1vw + 1vh) * 3);
+  font-size: calc((1vw + 1vh) + 3rem);
 `;
 
 const aboutMeSubText = styled.span`
-  font-size: calc((1vw + 1vh) * 1.25);
+  font-size: calc((1vw + 1vh) + 1rem);
 `;
 
 export default { aboutMeMainText, aboutMeContainer, textBox, aboutMeSubText };
