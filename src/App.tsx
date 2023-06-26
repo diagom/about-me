@@ -1,6 +1,7 @@
 import style from "App-style";
 import AboutMeHeader from "components/About-Me-Header";
 import SocialMidia from "components/Social-Medias";
+import TimeLine from "components/Time-Line";
 
 const App = () => (
   <>
@@ -11,7 +12,9 @@ const App = () => (
         <AboutMeHeader />
       </style.loadAnimation>
     </style.aboutMeHeader>
-    <main></main>
+    <style.aboutMainContainer>
+      <TimeLine />
+    </style.aboutMainContainer>
     <footer></footer>
   </>
 );
