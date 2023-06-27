@@ -5,7 +5,6 @@ const aboutMeContainer = styled.section`
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
-  justify-content: center;
 
   @media (max-width: 1023px) {
     width: 90%;
