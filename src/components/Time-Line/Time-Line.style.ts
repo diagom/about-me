@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
 const aboutMeContainer = styled.section`
-  width: 100%;
-
+  width: 50%;
   display: flex;
-
   overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
 `;
 
-const textBox = styled.div`
-  width: 250px;
-  margin-inline: 20px;
+const textBox = styled.div<{ $isOnTheLeft?: boolean }>`
+  min-width: 45%;
+
+  ${(props) => (props?.$isOnTheLeft ? "margin-left: 45%; text-align: end;" : "margin-right: 45%;")};
 
   display: flex;
   flex-wrap: nowrap;
@@ -19,11 +20,17 @@ const textBox = styled.div`
   align-items: flex-start;
 `;
 
-const textTitle = styled.div`
-  margin-top: 5%;
-`;
-const text = styled.div`
-  margin-top: 5%;
+const sideBlock = styled.div`
+  min-width: 45%;
 `;
 
-export default { aboutMeContainer, textBox, textTitle, text };
+const textTitle = styled.div`
+  width: 100%;
+  font-size: calc((0.7vw + 0.7vh) + 1rem);
+`;
+
+const text = styled.div`
+  font-size: calc((0.5vw + 0.5vh) + 0.5rem);
+`;
+
+export default { aboutMeContainer, textBox, textTitle, text, sideBlock };

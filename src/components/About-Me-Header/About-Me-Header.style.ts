@@ -16,7 +16,7 @@ const textBox = styled.div`
   flex-wrap: nowrap;
 
   span {
-    height: calc((1vw + 1vh) * 3);
+    height: calc((1vw + 1vh) + 3rem);
   }
 `;
 
