@@ -21,6 +21,10 @@ const iconsConstainer = styled.div`
     }
   }
 
+  @media (max-width: 1023px) {
+    display: none;
+  }
+
   animation: 2s ease-out 0s 1 slideInFromButtom;
 `;
 

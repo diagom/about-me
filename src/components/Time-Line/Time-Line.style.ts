@@ -6,6 +6,10 @@ const aboutMeContainer = styled.section`
   overflow: hidden;
   flex-wrap: wrap;
   justify-content: center;
+
+  @media (max-width: 1023px) {
+    width: 90%;
+  }
 `;
 
 const textBox = styled.div<{ $isOnTheLeft?: boolean }>`
@@ -18,6 +22,11 @@ const textBox = styled.div<{ $isOnTheLeft?: boolean }>`
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
+
+  @media (max-width: 1023px) {
+    margin-inline: 2%;
+    text-align: start;
+  }
 `;
 
 const sideBlock = styled.div`
@@ -27,6 +36,10 @@ const sideBlock = styled.div`
 const textTitle = styled.div`
   width: 100%;
   font-size: calc((0.7vw + 0.7vh) + 1rem);
+
+  @media (max-width: 1023px) {
+    font-size: calc((0.5vw + 0.5vh) + 1rem);
+  }
 `;
 
 const text = styled.div`
