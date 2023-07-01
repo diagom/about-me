@@ -15,9 +15,6 @@ const App = () => (
     </style.aboutMeHeader>
     <style.aboutMainContainer>
       <style.aboutMeSection>
-        <MySkills />
-      </style.aboutMeSection>
-      <style.aboutMeSection>
         <TimeLine />
       </style.aboutMeSection>
     </style.aboutMainContainer>
