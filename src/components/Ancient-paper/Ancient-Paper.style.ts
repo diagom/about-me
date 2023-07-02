@@ -33,18 +33,6 @@ const paperBorderTop = styled.div<{ $height?: string; $width?: string }>`
   left: 50%;
   transform: translate(-50%, 0);
 
-  img {
-    width: 50%;
-    height: 50%;
-
-    visibility: hidden;
-    animation-name: borderGrowUp;
-    animation-delay: 1.3s;
-    animation-duration: 8s;
-    animation-fill-mode: forwards;
-    animation-timing-function: ease;
-  }
-
   @keyframes borderGrowUp {
     0% {
       clip-path: circle(0.5% at 0 0);
@@ -57,6 +45,18 @@ const paperBorderTop = styled.div<{ $height?: string; $width?: string }>`
 
   @media (max-width: 1024px) {
     display: none;
+  }
+
+  img {
+    width: 50%;
+    height: 50%;
+
+    visibility: hidden;
+    animation-name: borderGrowUp;
+    animation-delay: 1.3s;
+    animation-duration: 8s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
   }
 
   &:after {
