@@ -1,5 +1,23 @@
 import style from "components/Time-Line/Time-Line.style";
 import AncientPaper from "components/Ancient-paper";
+import Dots from "./Dots";
+
+const nodes = [
+  { x: 65, y: 15, done: true },
+  { x: 40, y: 30, done: true },
+  { x: 60, y: 45, done: true },
+  { x: 30, y: 55, done: true },
+  { x: 60, y: 70, done: true },
+  { x: 40, y: 85 }
+];
+
+const links = [
+  { s: 0, d: 1 },
+  { s: 1, d: 2 },
+  { s: 2, d: 3 },
+  { s: 3, d: 4 },
+  { s: 4, d: 5 }
+];
 
 const TimeLine = () => (
   <>
@@ -38,6 +56,10 @@ const TimeLine = () => (
         </style.textBox>
       </style.aboutMeContainer>
     </AncientPaper>
+
+    <style.dotsContainer>
+      <Dots width={"100%"} height={"100%"} nodes={nodes} links={links} />
+    </style.dotsContainer>
   </>
 );
 

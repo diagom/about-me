@@ -14,7 +14,7 @@ const aboutMeContainer = styled.section`
 const textBox = styled.div<{ $isOnTheLeft?: boolean }>`
   min-width: 45%;
 
-  ${(props) => (props?.$isOnTheLeft ? "margin-left: 45%; text-align: end;" : "margin-right: 45%;")};
+  ${props => (props?.$isOnTheLeft ? "margin-left: 45%; text-align: end;" : "margin-right: 45%;")};
 
   display: flex;
   flex-wrap: nowrap;
@@ -45,4 +45,12 @@ const text = styled.div`
   font-size: calc((0.5vw + 0.5vh) + 0.5rem);
 `;
 
-export default { aboutMeContainer, textBox, textTitle, text, sideBlock };
+const dotsContainer = styled.div`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  bottom: 100%;
+  z-index: -1;
+`;
+
+export default { aboutMeContainer, textBox, textTitle, text, sideBlock, dotsContainer };
