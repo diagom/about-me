@@ -19,13 +19,13 @@ function Dots({ width, height, nodes, links }: any) {
             x2={xScale(nodes[link.d].x)}
             y1={yScale(nodes[link.s].y)}
             y2={yScale(nodes[link.d].y)}
-            strokeWidth={8}
-            strokeDasharray={nodes[link.s].done && nodes[link.d].done ? "10 0" : "10 6"}
-            stroke={"grey"}
+            strokeWidth={5}
+            strokeDasharray="10 6"
+            stroke="rgba(114, 0, 0, 0.8)"
           />
         ))}
         {nodes.map((node: any, i: any) => (
-          <circle key={i + "- circle"} cx={xScale(node.x)} cy={yScale(node.y)} r="20" fill={"rgba(114, 0, 0, 0.8)"} />
+          <circle key={i + "- circle"} cx={xScale(node.x)} cy={yScale(node.y)} r="20" fill="rgba(114, 0, 0, 1)" />
         ))}
       </style.dotMapSvg>
     </style.dotMapContainer>
