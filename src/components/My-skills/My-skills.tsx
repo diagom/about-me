@@ -15,17 +15,17 @@ const MySkills = () => (
           <style.text>I like to code things from scratch, and enjoy bringing ideas to life in the browser.</style.text>
         </div>
         <div>
-          <style.secondTitle>Dev linguages:</style.secondTitle>
-          <style.text>HTML, typeScript ,CSS, Sass, Git</style.text>
+          <style.secondTitle>Dev languages:</style.secondTitle>
+          <style.text>typeScript, javaScript, html CSS, Sass</style.text>
         </div>
         <div>
           <style.secondTitle>Dev libraries and frameworks:</style.secondTitle>
           <style.listContainer>
-            <li>HTML</li>
-            <li>typeScript</li>
-            <li>CSS</li>
-            <li>Sass</li>
-            <li>Git</li>
+            <li>React</li>
+            <li>Angular</li>
+            <li>React native</li>
+            <li>Redux</li>
+            <li>jest</li>
           </style.listContainer>
         </div>
       </style.columnDisplay>
@@ -40,16 +40,16 @@ const MySkills = () => (
           </style.text>
         </div>
         <div>
-          <style.secondTitle>Dev linguages:</style.secondTitle>
-          <style.text>HTML, Pug, Slim, CSS, Sass, Git</style.text>
+          <style.secondTitle>Dev languages:</style.secondTitle>
+          <style.text>NodeJs, Python</style.text>
         </div>
         <div>
           <style.secondTitle>Dev libraries and frameworks:</style.secondTitle>
           <style.listContainer>
-            <li>Atom</li>
-            <li>Bitbucket</li>
-            <li>Bootstrap</li>
-            <li>Bulma</li>
+            <li>Django</li>
+            <li>Next.JS</li>
+            <li>Mocha</li>
+            <li>Jest</li>
           </style.listContainer>
         </div>
       </style.columnDisplay>
