@@ -5,6 +5,12 @@ const dotMapContainer = styled.div`
   visibility: hidden;
   height: 100%;
 
+  animation-name: borderGrowUpMap;
+  animation-delay: 1.3s;
+  animation-duration: 8s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease;
+
   @keyframes borderGrowUpMap {
     0% {
       clip-path: inset(5% 4% 84% 5%);
@@ -19,11 +25,9 @@ const dotMapContainer = styled.div`
     visibility: visible;
   }
 
-  animation-name: borderGrowUpMap;
-  animation-delay: 1.3s;
-  animation-duration: 8s;
-  animation-fill-mode: forwards;
-  animation-timing-function: ease;
+  @media (max-width: 1023px) {
+    display: none;
+  }
 `;
 
 const dotMapSvg = styled.svg`
