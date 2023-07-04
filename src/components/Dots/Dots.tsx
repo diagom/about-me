@@ -1,4 +1,5 @@
 import { scaleLinear } from "d3-scale";
+import style from "components/Dots/Dots.style";
 
 function Dots({ width, height, nodes, links }: any) {
   const xScale = scaleLinear()
@@ -9,8 +10,8 @@ function Dots({ width, height, nodes, links }: any) {
     .range([0, height]);
 
   return (
-    <div id="map" style={{ position: "relative", height: "100%" }}>
-      <svg style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, width: "100%", height: "100%" }}>
+    <style.dotMapContainer id="map">
+      <style.dotMapSvg>
         {links.map((link: any, i: any) => (
           <line
             key={i + "- line"}
@@ -24,10 +25,10 @@ function Dots({ width, height, nodes, links }: any) {
           />
         ))}
         {nodes.map((node: any, i: any) => (
-          <circle key={i + "- circle"} cx={xScale(node.x)} cy={yScale(node.y)} r="20" fill={"rgba(204, 0, 0, 0.5)"} />
+          <circle key={i + "- circle"} cx={xScale(node.x)} cy={yScale(node.y)} r="20" fill={"rgba(114, 0, 0, 0.8)"} />
         ))}
-      </svg>
-    </div>
+      </style.dotMapSvg>
+    </style.dotMapContainer>
   );
 }
 

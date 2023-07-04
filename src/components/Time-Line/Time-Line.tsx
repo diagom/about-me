@@ -1,6 +1,6 @@
 import style from "components/Time-Line/Time-Line.style";
 import AncientPaper from "components/Ancient-paper";
-import Dots from "./Dots";
+import Dots from "components/Dots";
 
 const nodes = [
   { x: 65, y: 15, done: true },
