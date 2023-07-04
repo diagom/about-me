@@ -5,7 +5,7 @@ const dotMapContainer = styled.div`
   visibility: hidden;
   height: 100%;
 
-  @keyframes borderGrowUp {
+  @keyframes borderGrowUpMap {
     0% {
       clip-path: inset(5% 4% 84% 5%);
     }
@@ -19,7 +19,7 @@ const dotMapContainer = styled.div`
     visibility: visible;
   }
 
-  animation-name: borderGrowUp;
+  animation-name: borderGrowUpMap;
   animation-delay: 1.3s;
   animation-duration: 8s;
   animation-fill-mode: forwards;
