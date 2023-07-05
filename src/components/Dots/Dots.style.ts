@@ -5,13 +5,12 @@ const dotMapContainer = styled.div`
   visibility: hidden;
   height: 100%;
 
-  animation-name: borderGrowUpMap;
-  animation-delay: 1.3s;
+  animation-delay: 1s;
   animation-duration: 8s;
   animation-fill-mode: forwards;
   animation-timing-function: ease;
 
-  @keyframes borderGrowUpMap {
+  @keyframes mapGrowUp {
     0% {
       clip-path: inset(5% 4% 84% 5%);
     }

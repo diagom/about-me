@@ -1,7 +1,26 @@
+import react, { useEffect, useState } from "react";
 import { scaleLinear } from "d3-scale";
 import style from "components/Dots/Dots.style";
 
 function Dots({ width, height, nodes, links }: any) {
+  const reqElement = react.useRef(null);
+
+  useEffect(() => {
+    const square = reqElement.current! as Element;
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          square.setAttribute("style", "animation-name: mapGrowUp");
+          return;
+        }
+
+        square.removeAttribute("style");
+      });
+    });
+
+    observer.observe(square);
+  }, [window.scrollX]);
+
   const xScale = scaleLinear()
     .domain([0, 100])
     .range([0, width]);
@@ -10,7 +29,7 @@ function Dots({ width, height, nodes, links }: any) {
     .range([0, height]);
 
   return (
-    <style.dotMapContainer id="map">
+    <style.dotMapContainer ref={reqElement}>
       <style.dotMapSvg>
         {links.map((link: any, i: any) => (
           <line
