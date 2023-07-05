@@ -5,7 +5,7 @@ import TimeLine from "components/Time-Line";
 import MySkills from "components/My-skills";
 
 const App = () => (
-  <>
+  <style.scrollSection>
     <SocialMidia />
 
     <style.aboutMeHeader>
@@ -22,7 +22,7 @@ const App = () => (
       </style.aboutMeSection>
     </style.aboutMainContainer>
     <footer></footer>
-  </>
+  </style.scrollSection>
 );
 
 export default App;

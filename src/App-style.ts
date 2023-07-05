@@ -1,5 +1,21 @@
 import styled from "styled-components";
 
+const scrollSection = styled.section`
+  position: absolute;
+  width: 100%;
+  height: 100svh;
+
+  overflow-y: auto;
+  overscroll-behavior-y: contain;
+  scroll-snap-type: y mandatory;
+
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+`;
+
 const loadAnimation = styled.div`
   @keyframes slideInFromTop {
     0% {
@@ -18,18 +34,18 @@ const aboutMeHeader = styled.header`
   flex-wrap: wrap;
   justify-content: center;
   margin-top: 5vh;
-  overflow: hidden;
+  scroll-snap-align: center;
 `;
 
 const aboutMainContainer = styled.main`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  overflow: hidden;
 `;
 
 const aboutMeSection = styled.section`
+  scroll-snap-align: center;
   margin-top: 5vh;
 `;
 
-export default { loadAnimation, aboutMeHeader, aboutMainContainer, aboutMeSection };
+export default { loadAnimation, aboutMeHeader, aboutMainContainer, aboutMeSection, scrollSection };
