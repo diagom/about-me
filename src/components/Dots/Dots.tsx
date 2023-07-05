@@ -1,6 +1,7 @@
-import react, { useEffect, useState } from "react";
+import react, { useEffect } from "react";
 import { scaleLinear } from "d3-scale";
 import style from "components/Dots/Dots.style";
+import spotsMark from "assets/icons8-x.svg";
 
 function Dots({ width, height, nodes, links }: any) {
   const reqElement = react.useRef(null);
@@ -44,7 +45,13 @@ function Dots({ width, height, nodes, links }: any) {
           />
         ))}
         {nodes.map((node: any, i: any) => (
-          <circle key={i + "- circle"} cx={xScale(node.x)} cy={yScale(node.y)} r="20" fill="rgba(114, 0, 0, 1)" />
+          <image
+            transform="translate(-30,-29)"
+            key={i + "- circle"}
+            x={xScale(node.x)}
+            y={yScale(node.y)}
+            href={spotsMark}
+          />
         ))}
       </style.dotMapSvg>
     </style.dotMapContainer>
